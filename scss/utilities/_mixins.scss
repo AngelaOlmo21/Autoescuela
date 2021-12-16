@@ -1,0 +1,30 @@
+@import url('variables.scss');
+
+@mixin a-color-hover {
+    color: $text-color-hover;
+    background-color: $bg-color-hover;
+}
+
+@mixin animation-hover-a {
+    -moz-animation: iluminar 0.4s linear;
+    -webkit-animation: iluminar 0.4s linear;
+    animation: iluminar 0.4s linear;
+    
+}
+
+@mixin ul-transition {
+    -moz-transition: height 0.5s ease-out;
+    -webkit-transition: height 0.5s ease-out;
+    transition: height 0.5s ease-out;
+}
+
+@mixin li-cat-a-transition {
+    -moz-transition: padding 0.4s ease-out;
+    -webkit-transition: padding 0.4s ease-out;
+    transition: padding 0.4s ease-out;
+}
+
+@mixin nav-a-color{
+    color: $text-color-nav;
+    background-color: $bg-color-nav;
+}

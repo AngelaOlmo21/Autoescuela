@@ -1,0 +1,60 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+nav {
+    width: 100%;
+    position: relative;
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    >ul {
+        width: 100%;
+        height: 32px;
+        @include nav-a-color;
+    }
+    
+    a {
+        @include nav-a-color;
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    a:hover {
+        @include a-color-hover;
+        @include animation-hover-a;
+    }
+    
+}
+
+
+li.categoria {
+    float: left;
+
+    >a {
+        @include li-cat-a-transition;
+    }
+    
+    &:hover>a {
+        padding: 10px 20px;
+    }
+
+    &:hover ul.submenu {
+        height: 100px;
+    }
+    
+}
+
+ul.submenu {
+    @include ul-transition;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+}

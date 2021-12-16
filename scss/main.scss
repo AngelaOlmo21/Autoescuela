@@ -1,0 +1,14 @@
+@import "base/_reset.scss";
+@import "components/_buttons.scss";
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+@import "layout/_forms.scss";
+@import "layout/_nav.scss";
+@import "layout/_table.scss";
+@import "utilities/_functions.scss";
+@import "utilities/_mixins.scss";
+@import "utilities/_variables.scss";
+@import "components/textarea";
+body{
+    background-color:  hsl(173, 57%, 88%);
+}
